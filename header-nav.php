@@ -7,15 +7,15 @@
 			</a> <a class="brand" href="index.php">EZ-BLOG</a>
 			<div class="nav-collapse">
 				<ul class="nav">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="http://www.zts1993.com/">About</a></li>
-					<li><a href="http://www.zts1993.com/at-contact-me/">Contact</a></li>
+					<li><a href="index.php">首页</a></li>
+					<li><a href="http://www.zts1993.com/">关于</a></li>
+					<li><a href="http://www.zts1993.com/at-contact-me/">联系我</a></li>
 				</ul>
 			</div>
 			<form class="navbar-form pull-right" method="get" action="search.php">
 				<input name="keys" class="span2" x-webkit-speech type="text"
 					lang="zh-CN">
-				<button class="btn" type="submit" name="subs" value="Search">Search</button>
+				<button class="btn" type="submit" name="subs" value="Search">搜索</button>
 			</form>
 		</div>
 	</div>

@@ -1,7 +1,7 @@
 <?php
 
 $db_username = "root"; //数据库用户名
-$db_password = ""; //数据库密码
+$db_password = "zts262019"; //数据库密码
 $db_database = "test"; //数据库名称
 $db_hostname = "127.0.0.1"; //数据库地址
 

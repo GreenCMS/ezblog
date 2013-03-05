@@ -1,0 +1,250 @@
+﻿/******** General tags ********/
+body {
+	font: 90% Lucida Grande, Verdana, Tahoma, Arial, sans-serif;
+	background-image: url("../assets/img/bg_body.jpg");
+	background-repeat: repeat;
+	color: #404040;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #4088b8;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img {
+	border: 0;
+}
+
+p {
+	margin: 0 0 18px 10px;
+}
+
+ul,ol {
+	font-size: 0.9em;
+	margin: 2px 0 16px 35px;
+}
+
+ul ul,ol ol {
+	margin: 4px 0 4px 35px;
+}
+
+h1 {
+	font-size: 4em;
+	letter-spacing: -2px;
+	margin: 0 0 30px 20px;
+	color: #4088b8;
+}
+
+h1 a {
+	text-transform: none;
+	color: #4088b8;
+}
+
+h2 {
+	font-size: 1.4em;
+	color: #666;
+	border-bottom: 2px solid #dadada;
+	padding: 0 2px 2px 5px;
+	margin: 0 0 10px 0;
+	letter-spacing: 1px;
+}
+
+h2 a {
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #4088b8;
+	margin: 10px 0 8px 0;
+	padding: 1px 2px 2px 3px;
+}
+
+blockquote {
+	font-size: 0.9em;
+	border: 1px solid #dadada;
+	margin: 20px 10px;
+	padding: 8px;
+}
+
+/******** Main wrap ********/
+#wrap {
+	color: #404040;
+	width: 800px;
+	margin: 10px auto;
+	padding: 0;
+}
+
+#header {
+	margin: 0;
+	padding: 0;
+}
+
+#toplinks {
+	text-align: right;
+	padding: 5px 2px 2px 3px;
+	margin: 0;
+}
+
+#slogan {
+	font-size: 1.5em;
+	color: #808080;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin: 15px 0px 20px 35px;
+	line-height: 1.2em;
+}
+
+/******** sidebar ********/
+#sidebar {
+	float: left;
+	width: 200px;
+	margin: 0 0 10px 0;
+	padding: 8px 0 0 10px;
+	letter-spacing: 0px;
+}
+
+#sidebar ul {
+	list-style: none;
+	line-height: 1.8em;
+	margin: 0;
+	padding: 0 0 3px 3px;
+	letter-spacing: 2px;
+}
+
+#sidebar ul li {
+	list-style: none;
+	font-size: 1em;
+	color: #999999;
+	margin: 0;
+	padding: 0 0 7px 0;
+}
+
+#sidebar ul li a {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#sidebar h2 {
+	margin: 3px 0px 8px 0px;
+}
+
+/******** Content variations ********/
+#content {
+	line-height: 1.5em;
+	width: 555px;
+	float: right;
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+}
+
+pre {
+	COLOR: #000033;
+	BACKGROUND-COLOR: #fff0f0;
+	padding: 5px 10px 5px 10px;
+}
+
+#content img,#content a img {
+	border: 1px solid #bababa;
+	padding: 2px;
+	background-color: #ffffff;
+	margin: 6px 18px 2px 5px;
+}
+
+#content h3 {
+	margin: 10px 0 8px;
+}
+
+#content h1 {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	font-size: 3.3em;
+	letter-spacing: -2px;
+	margin: 0 0 30px 20px;
+	color: #4088b8;
+}
+
+#detail {
+	line-height: 1.5em;
+	width: 555px;
+	float: right;
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+}
+
+#detail h1 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	line-height: 1.3em;
+	letter-spacing: 0.5px;
+	margin: 0 0 30px 20px;
+	color: #4088b8;
+}
+
+#detail h2 {
+	text-align: center;
+}
+/******** Footer ********/
+#footer {
+	clear: both;
+	text-align: right;
+	color: #808080;
+	font-size: 0.9em;
+	border-top: 4px solid #dadada;
+	margin: 0 auto;
+	padding: 8px 0;
+	line-height: 1.6em;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0;
+}
+
+#footer a {
+	color: #808080;
+}
+
+/******** Various classes ********/
+.right {
+	text-align: right;
+	font-size: 0.8em;
+}
+
+.clear {
+	clear: both;
+}
+
+.entrydate {
+	text-align: right;
+	color: #c8c8c8;
+}
+
+#login {
+	text-align: center;
+}
+
+#login h1 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	line-height: 1.3em;
+	letter-spacing: 0.5px;
+	margin: 0 0 30px 20px;
+	color: #4088b8;
+}

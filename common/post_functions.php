@@ -98,18 +98,16 @@ function the_posts() {
 }
 
 function get_other_post() {
-	@$sql = "select * from `posts` order by post_hits desc limit 0,8  ";
-	$query = mysql_query ( $sql ) or die ( "GET posts failed" );
-
+	global $rs;
+	$sql = "select * from `posts` order by post_hits desc limit 0,10  ";
+	$query = mysql_query ( $sql ) or die ( "GET other posts failed" );
 	$result='<h3>&nbsp&nbsp&nbsp&nbsp您可能还会对这些最新热门文章感兴趣！</h3>';
-	
 	//$a=0;
-	while ( $rs0 = mysql_fetch_array($query) ) {
-	//	echo $a++;
-			
+	for( $i=0;$i<10;$i++) {
+		$rs = mysql_fetch_array($query);
 		$result.='<ul>
-			<span>Views:'.$rs0 ['post_hits'].'</span> &nbsp&nbsp
-			<a href="single.php?id='.$rs0['ID'] .'">'. $rs0 ['post_title'] .'</a>
+			<span>Views:'.get_post_hit().'</span> &nbsp&nbsp
+			<a href="'.get_post_link().'">'. get_post_title().'</a>
 		</ul>';
  	 }  
 		$result.='<hr />';

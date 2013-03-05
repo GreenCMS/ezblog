@@ -10,7 +10,7 @@
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="brand" href="#">Top</a>
+				<a class="brand" href="#">返回顶部</a>
 				<ul class="nav">
 					<li><a href="index.php">首页</a></li>
 	                 <?php
@@ -44,7 +44,7 @@ if (! is_index ()) {
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="brand" href="#">返回顶部</a>
+				<a class="brand" href="index.php">返回首页</a>
 				<ul class="nav">
 			<?php
 			global $id;
