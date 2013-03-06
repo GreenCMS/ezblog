@@ -30,8 +30,7 @@
 	</ul>
 
 
-	<br />
-	<br />
+	<br /> <br />
 	<h2>Quit</h2>
 	<ul>
 		<a href="logout.php">Logout</a>
@@ -44,9 +43,7 @@
 			value="Search">
 		</li>
 	</form>
-	<br />
-	<br />
-	<br />
+	<br /> <br /> <br />
 
 
 

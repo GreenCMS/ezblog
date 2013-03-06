@@ -56,7 +56,6 @@ function get_author() {
 
 }
 
-
 ?>
 
 

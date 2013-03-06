@@ -1,6 +1,7 @@
 .control-section .customize-section-title {
 	font-family: Tahoma, Arial, sans-serif;
 }
+
 .customize-section-title:after {
 	right: auto;
 	left: 20px;
@@ -20,8 +21,7 @@
 	float: right;
 }
 
-.customize-control-radio input,
-.customize-control-checkbox input {
+.customize-control-radio input,.customize-control-checkbox input {
 	margin-right: 0;
 	margin-left: 5px;
 }
@@ -44,7 +44,6 @@
 .customize-control .dropdown-arrow {
 	right: auto;
 	left: 0;
-
 	border-color: #ccc;
 	border-style: solid;
 	border-width: 1px 0 1px 1px;
@@ -76,10 +75,7 @@
 	text-align: left;
 }
 
-.customize-control-image .library,
-.customize-control-image .actions,
-.customize-section .customize-control-image .library ul,
-.customize-section .customize-control-image .library li,
-.customize-section .customize-control-image .library-content {
+.customize-control-image .library,.customize-control-image .actions,.customize-section .customize-control-image .library ul,.customize-section .customize-control-image .library li,.customize-section .customize-control-image .library-content
+	{
 	float: right;
 }

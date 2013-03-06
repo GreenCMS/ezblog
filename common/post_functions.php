@@ -4,16 +4,15 @@ function get_post_max() {
 	$sql = "SELECT MAX( ID ) FROM  `posts` WHERE 1";
 	$query = mysql_query ( $sql ) or die ( "GET MAX ID failed" );
 	$rs = mysql_fetch_array ( $query );
-	return $rs['0'];
+	return $rs ['0'];
 }
 
 function get_post_min() {
-		$sql = "SELECT MIN( ID ) FROM  `posts` WHERE 1";
-		$query = mysql_query ( $sql ) or die ( "GET MIN ID failed" );
-		$rs = mysql_fetch_array ( $query );
-		return $rs['0'];
+	$sql = "SELECT MIN( ID ) FROM  `posts` WHERE 1";
+	$query = mysql_query ( $sql ) or die ( "GET MIN ID failed" );
+	$rs = mysql_fetch_array ( $query );
+	return $rs ['0'];
 }
-
 
 function have_posts() {
 	global $rs;
@@ -46,13 +45,12 @@ function get_post_link() {
 	if ($ez_url_model == 2)
 		$post_link = "single-$post_id.html";
 	
-	
 	return $post_link;
 }
 
 function get_post_time() {
 	global $rs;
-	return  $rs ['time'];
+	return $rs ['time'];
 
 }
 
@@ -101,37 +99,38 @@ function get_other_post() {
 	global $rs;
 	$sql = "select * from `posts` order by post_hits desc limit 0,10  ";
 	$query = mysql_query ( $sql ) or die ( "GET other posts failed" );
-	$result='<h3>&nbsp&nbsp&nbsp&nbsp您可能还会对这些最新热门文章感兴趣！</h3>';
+	$result = '<h3>&nbsp&nbsp&nbsp&nbsp您可能还会对这些最新热门文章感兴趣！</h3>';
 	//$a=0;
-	for( $i=0;$i<10;$i++) {
-		$rs = mysql_fetch_array($query);
-		$result.='<ul>
-			<span>Views:'.get_post_hit().'</span> &nbsp&nbsp
-			<a href="'.get_post_link().'">'. get_post_title().'</a>
+	for($i = 0; $i < 10; $i ++) {
+		$rs = mysql_fetch_array ( $query );
+		$result .= '<ul>
+			<span>Views:' . get_post_hit () . '</span> &nbsp&nbsp
+			<a href="' . get_post_link () . '">' . get_post_title () . '</a>
 		</ul>';
- 	 }  
-		$result.='<hr />';
-	
+	}
+	$result .= '<hr />';
 	
 	return $result;
 }
 
-
 function get_post_by_id($id) {
-
+	
 	$sql = "select * from `posts` where `ID`='$id'";
-	$query = mysql_query ( $sql );// or die ( "GET ID failed" );
+	$query = mysql_query ( $sql ); // or die ( "GET ID failed" );
+	
 
 	$rs = mysql_fetch_array ( $query );
 	return $rs;
-		
+
 }
 
-function	hit_post_by_id($id) {
+function hit_post_by_id($id) {
 	$sql = "update `posts` set post_hits=post_hits+1 where `ID`='$id'";
 	//echo $sql;
 	$query = mysql_query ( $sql ) or die ( "GET ID failed" );
-	//echo get_post_hit ();
+
+		//echo get_post_hit ();
+
 
 }
 

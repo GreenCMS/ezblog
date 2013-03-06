@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 if(empty($_GET["sub"]))
 { ?>
@@ -12,7 +12,7 @@ if(empty($_GET["sub"]))
 </div>
 <?php }*/?>
 
-<?php 
+<?php
 /*
 if(!empty($_GET["sub"])){ 
 	$username=$_GET['name'];$password=md5($_GET['pass']);	

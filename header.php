@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
  <?php
- 	include ("common/db_config.php");
-	include  'common/main_functions.php';
+	include ("common/db_config.php");
+	include 'common/main_functions.php';
 	
 	include 'include/runtime.php';
 	error_reporting ( E_ALL ^ E_NOTICE );

@@ -15,10 +15,10 @@
 					<li><a href="index.php">首页</a></li>
 	                 <?php
 			
-if (! is_index ()) {
+			if (! is_index ()) {
 				echo " <li><a href=" . get_page_link ( get_page () - 1 ) . "> 上一页</a></li>";
 			}
-			for($i = 1; $i <= get_page_num () + 1&&$i <= 20; $i ++) {
+			for($i = 1; $i <= get_page_num () + 1 && $i <= 20; $i ++) {
 				echo "<li><a href=" . get_page_link ( $i ) . " >$i</a></li>";
 			}
 			

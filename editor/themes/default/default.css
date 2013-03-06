@@ -888,7 +888,7 @@
 
 .ke-dialog-mask {
 	background-color: #FFF;
-	filter: alpha(opacity = 50);
+	filter: alpha(opacity =   50);
 	opacity: 0.5;
 }
 
@@ -985,7 +985,7 @@
 	z-index: 811212;
 	border: 0 none;
 	opacity: 0;
-	filter: alpha(opacity = 0);
+	filter: alpha(opacity =   0);
 }
 /* tabs */
 .ke-tabs {

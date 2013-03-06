@@ -17,7 +17,7 @@ function is_index() {
 
 function is_home() {
 	global $pageval;
-	if ($pageval!='')
+	if ($pageval != '')
 		return true;
 	else
 		return false;
@@ -25,7 +25,7 @@ function is_home() {
 
 function is_post() {
 	global $id;
-	if ($id !='')
+	if ($id != '')
 		return true;
 	else
 		return false;
@@ -47,12 +47,11 @@ function get_page() {
 
 function get_page_link($pageval) {
 	global $ez_url_model;
-	if($ez_url_model==1)
+	if ($ez_url_model == 1)
 		return "index.php?page=$pageval";
-	if($ez_url_model==2)
+	if ($ez_url_model == 2)
 		return "page-$pageval.html";
 }
-
 
 ?>
 

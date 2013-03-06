@@ -4,21 +4,20 @@ include ("common/db_config.php");
 include "header.php";
 include "header-nav.php";
 include "siderbar.php";
-@$id=$_GET ['id'];
-if (! empty ($id )) {
-	$rs=get_post_by_id( $id ) ;
-	hit_post_by_id( $id ) ;
-	if($rs==''){
-		header("location:./404.php");
+@$id = $_GET ['id'];
+if (! empty ( $id )) {
+	$rs = get_post_by_id ( $id );
+	hit_post_by_id ( $id );
+	if ($rs == '') {
+		header ( "location:./404.php" );
 	}
-}
-else{
-	header("location:./404.php");
+} else {
+	header ( "location:./404.php" );
 }
 ?>
 
 <div class="content">
-	 
+
 	<hr class="ds-component" data-componentid="hr1" />
 	<div class="title">
 		<h1><?php echo get_post_title() ; ?></h1>
@@ -44,6 +43,6 @@ else{
 
 
 <?php
-	include "footer-nav.php";
+include "footer-nav.php";
 include "footer.php";
 ?>

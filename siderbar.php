@@ -1,7 +1,8 @@
 <body>
 
 	<div class="container-fluid"></div>
-	<div class="row-fluid"	style="background-color: white; padding: 10px 10px 10px 10px;">
+	<div class="row-fluid"
+		style="background-color: white; padding: 10px 10px 10px 10px;">
 
 		<div class="span3">
 			<div class="well sidebar-nav">
@@ -9,10 +10,12 @@
 					<li class="nav-header">
 						<h2>友情链接</h2>
 					</li>
-      		  	<?php	$sql = "select * from `links`  ";
-							$query = mysql_query ( $sql ) or die ( "GET LINKS failed" );
-								while ( $rs = mysql_fetch_array ( $query ) ) {
-				?>
+      		  	<?php
+											
+$sql = "select * from `links`  ";
+											$query = mysql_query ( $sql ) or die ( "GET LINKS failed" );
+											while ( $rs = mysql_fetch_array ( $query ) ) {
+												?>
 								<li><a href="<?php echo $rs['url_site']?>"><?php echo $rs['url_name']?></a></li>
 			<?php	}	?>
 	
@@ -22,12 +25,12 @@
 						<h2>最新文章</h2>
 					</li>
 		<?php
-			@$sql = "select * from `posts` order by `ID` desc limit 0,10 ";
-			$query = mysql_query ( $sql ) or die ( "GET posts failed" );
-			for($i = 0; $i < 10; $i ++) {
-				$rs = mysql_fetch_array ( $query );
-				echo "<li><a href=" . get_post_link () . "> " . get_post_content_short ( 0, 40 ) . "</a></li>";
-			}
+		@$sql = "select * from `posts` order by `ID` desc limit 0,10 ";
+		$query = mysql_query ( $sql ) or die ( "GET posts failed" );
+		for($i = 0; $i < 10; $i ++) {
+			$rs = mysql_fetch_array ( $query );
+			echo "<li><a href=" . get_post_link () . "> " . get_post_content_short ( 0, 40 ) . "</a></li>";
+		}
 		
 		?>
 	

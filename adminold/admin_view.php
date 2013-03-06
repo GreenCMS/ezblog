@@ -48,6 +48,9 @@ while ( $rs = mysql_fetch_array ( $query ) ) {
 
 	
 	
+	
+	
+	
 	<p class="right">
 		<a href='edit.php?id=<?php echo $rs['id'] ?>'>编辑</a>|<a
 			href='del.php?id=<?php echo $rs['id'] ?>'>删除</a>
@@ -71,8 +74,9 @@ while ( $rs = mysql_fetch_array ( $query ) ) {
 			echo "<a href=index.php?page=" . ($pageval + 1) . ">下一页</a>";
 	
 	} else {
-		echo "共 $num 条";}
-?>
+		echo "共 $num 条";
+	}
+	?>
 </div>
 
 

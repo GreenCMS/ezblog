@@ -4,7 +4,7 @@ include "header-nav.php";
 include "siderbar.php";
 include "common/db_config.php";
 include "common/settings.php";
-$pageval=1;
+$pageval = 1;
 $pageall = get_page_num (); //计算页面总数
 $pageval = get_page ();
 $paged = ($pageval - 1) * $ez_pagesize . ',';

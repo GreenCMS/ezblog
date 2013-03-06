@@ -37,32 +37,35 @@ h2 {
 	font-size: 16px;
 }
 
-p, li, dd, dt {
+p,li,dd,dt {
 	padding-bottom: 2px;
 	font-size: 14px;
 	line-height: 1.5;
 }
 
-code, .code {
+code,.code {
 	font-size: 14px;
 }
 
-ul, ol, dl {
+ul,ol,dl {
 	padding: 5px 5px 5px 22px;
 }
 
 a img {
-	border:0
+	border: 0
 }
+
 abbr {
 	border: 0;
 	font-variant: normal;
 }
+
 #logo {
 	margin: 6px 0 14px 0;
 	border-bottom: none;
-	text-align:center
+	text-align: center
 }
+
 #logo a {
 	background-image: url('../images/wordpress-logo.png?ver=20120216');
 	background-size: 274px 63px;
@@ -74,31 +77,34 @@ abbr {
 	overflow: hidden;
 	display: block;
 }
-@media print,
-  (-o-min-device-pixel-ratio: 5/4),
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 120dpi) {
+
+@media print , ( -o-min-device-pixel-ratio : 5/4) , (
+		-webkit-min-device-pixel-ratio : 1.25) , ( min-resolution : 120dpi) {
 	#logo a {
 		background-image: url('../images/wordpress-logo-2x.png?ver=20120412');
 		background-size: 274px 63px;
 	}
 }
+
 .step {
 	margin: 20px 0 15px;
 }
-.step, th {
+
+.step,th {
 	text-align: left;
 	padding: 0;
 }
+
 .step .button-large {
 	font-size: 14px;
 }
+
 textarea {
 	border: 1px solid #dfdfdf;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	font-family: sans-serif;
-	width:  695px;
+	width: 695px;
 }
 
 .form-table {
@@ -144,8 +150,7 @@ textarea {
 	font-family: sans-serif;
 }
 
-.form-table input[type=text],
-.form-table input[type=password] {
+.form-table input[type=text],.form-table input[type=password] {
 	width: 206px;
 }
 
@@ -178,7 +183,7 @@ textarea {
 	margin: 25px 0 20px;
 }
 
-#error-page code, .code {
+#error-page code,.code {
 	font-family: Consolas, Monaco, monospace;
 }
 
@@ -231,31 +236,19 @@ body.rtl {
 	margin: 5px -4px 0 0;
 }
 
-.rtl ul,
-.rtl ol {
+.rtl ul,.rtl ol {
 	padding: 5px 22px 5px 5px;
 }
 
-.rtl .step,
-.rtl th,
-.rtl .form-table th {
+.rtl .step,.rtl th,.rtl .form-table th {
 	text-align: right;
 }
 
-.rtl .submit input,
-.rtl .button,
-.rtl .button-secondary {
+.rtl .submit input,.rtl .button,.rtl .button-secondary {
 	margin-right: 0;
 }
 
-.rtl #dbname,
-.rtl #uname,
-.rtl #pwd,
-.rtl #dbhost,
-.rtl #prefix,
-.rtl #user_login,
-.rtl #admin_email,
-.rtl #pass1,
-.rtl #pass2 {
+.rtl #dbname,.rtl #uname,.rtl #pwd,.rtl #dbhost,.rtl #prefix,.rtl #user_login,.rtl #admin_email,.rtl #pass1,.rtl #pass2
+	{
 	direction: ltr;
 }

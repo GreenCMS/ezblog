@@ -1,5 +1,4 @@
 /* Styles for the media library iframe (not used on the Library screen) */
-
 div#media-upload-header {
 	margin: 0;
 	padding: 5px 5px 0;
@@ -30,7 +29,7 @@ th {
 	position: relative;
 }
 
-.media-upload-form label.form-help, td.help {
+.media-upload-form label.form-help,td.help {
 	font-family: sans-serif;
 	font-style: italic;
 	font-weight: normal;
@@ -50,7 +49,6 @@ th {
 }
 
 /* specific to the image upload form */
-
 .image-align-none-label {
 	background: url(../images/align-none.png) no-repeat center left;
 }
@@ -75,11 +73,8 @@ tr.image-size div.image-size-item {
 	margin: 0 0 5px;
 }
 
-#library-form .progress,
-#gallery-form .progress,
-.insert-gallery,
-.describe.startopen,
-.describe.startclosed {
+#library-form .progress,#gallery-form .progress,.insert-gallery,.describe.startopen,.describe.startclosed
+	{
 	display: none;
 }
 
@@ -113,21 +108,18 @@ abbr.required {
 	width: 132px;
 }
 
-.describe input[type="text"],
-.describe textarea {
+.describe input[type="text"],.describe textarea {
 	width: 460px;
 	border-width: 1px;
 	border-style: solid;
 }
 
 /* Specific to Uploader */
-
 #media-upload p.ml-submit {
 	padding: 1em 0;
 }
 
-#media-upload p.help,
-#media-upload label.help {
+#media-upload p.help,#media-upload label.help {
 	font-family: sans-serif;
 	font-style: italic;
 	font-weight: normal;
@@ -180,7 +172,7 @@ abbr.required {
 	background-color: #fff;
 	border: 1px solid #aaa;
 	opacity: 0.6;
-	filter: alpha(opacity=60);
+	filter: alpha(opacity = 60);
 }
 
 #media-upload th.order-head {
@@ -223,21 +215,19 @@ abbr.required {
 	border-bottom: 1px solid #DADADA;
 }
 
-h3.media-title  {
+h3.media-title {
 	font-size: 1.6em;
 }
 
-h4.media-sub-title  {
+h4.media-sub-title {
 	border-bottom: 1px solid #DADADA;
 	font-size: 1.3em;
 	margin: 12px;
 	padding: 0 0 3px;
 }
 
-#gallery-settings .title,
-h3.media-title,
-h4.media-sub-title {
-	font-family: Georgia,"Times New Roman",Times,serif;
+#gallery-settings .title,h3.media-title,h4.media-sub-title {
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-weight: normal;
 	color: #5A5A5A;
 }
@@ -263,13 +253,12 @@ h4.media-sub-title {
 	width: 15em;
 }
 
-#gallery-settings .describe select option,
-#gallery-settings .describe td {
+#gallery-settings .describe select option,#gallery-settings .describe td
+	{
 	padding: 0;
 }
 
-#gallery-settings label,
-#gallery-settings legend {
+#gallery-settings label,#gallery-settings legend {
 	font-size: 13px;
 	color: #464646;
 	margin-right: 15px;
@@ -298,8 +287,7 @@ h4.media-sub-title {
 	text-decoration: none;
 }
 
-#sort-buttons #asc,
-#sort-buttons #showall {
+#sort-buttons #asc,#sort-buttons #showall {
 	padding-left: 5px;
 }
 
@@ -326,26 +314,20 @@ table.not-image tr.image-only {
 /**
  * HiDPI Displays
  */
-@media print,
-  (-o-min-device-pixel-ratio: 5/4),
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 120dpi) {
-
+@media print , ( -o-min-device-pixel-ratio : 5/4) , (
+		-webkit-min-device-pixel-ratio : 1.25) , ( min-resolution : 120dpi) {
 	.image-align-none-label {
 		background-image: url("../images/align-none-2x.png?ver=20120916");
 		background-size: 21px 15px;
 	}
-
 	.image-align-left-label {
 		background-image: url("../images/align-left-2x.png?ver=20120916");
 		background-size: 22px 15px;
 	}
-
 	.image-align-center-label {
 		background-image: url("../images/align-center-2x.png?ver=20120916");
 		background-size: 21px 15px;
 	}
-
 	.image-align-right-label {
 		background-image: url("../images/align-right-2x.png?ver=20120916");
 		background-size: 22px 15px;

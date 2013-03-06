@@ -60,7 +60,6 @@ include ("sidebar.php");
 		</div>
 <?php
 
-
 include ("footer.php");
 ?>
 </body>
