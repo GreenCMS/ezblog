@@ -1,4 +1,4 @@
-ezblog
+About ezblog
 ======
 
 ezblog
